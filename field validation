@@ -1,0 +1,9 @@
+//Validate your input on the checkout page
+
+add_action('woocommerce_checkout_process', 'my_custom_checkout_field_validation');
+
+function my_custom_checkout_field_validation() {
+    global $woocommerce;
+    if ($_POST['your_field_id'] == "your_value")
+         $woocommerce->add_error( __('Your custom error message here.', 'woocommerce') );
+}
