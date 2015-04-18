@@ -1,4 +1,4 @@
-//Validate your input on the checkout page
+//Validate your input from the checkout page form
 
 add_action('woocommerce_checkout_process', 'my_custom_checkout_field_validation');
 
