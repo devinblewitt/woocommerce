@@ -1,3 +1,5 @@
+<?php
+
 // adds custom checkout page notes after order notes
 
 // custom notes can also be inserted before order notes using 
@@ -10,3 +12,5 @@ function notice_custom() {
 echo '<p>Enter your custom checkout message here</p>';
 
 }
+
+?>
